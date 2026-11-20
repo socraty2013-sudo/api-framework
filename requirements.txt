@@ -1,4 +1,20 @@
+# 接口测试
 requests
+
+# 测试框架
 pytest
+pytest-rerunfailures
+pytest-xdist
+
+# 报告
+allure-pytest
+
+# UI 测试
+selenium
+
+# 数据驱动
 pyyaml
 openpyxl
+
+# 性能测试
+locust
