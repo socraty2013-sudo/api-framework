@@ -1,0 +1,12 @@
+- username: admin
+  password: "123456"
+  expect_code: 302
+  case_name: success
+- username: admin
+  password: wrong
+  expect_code: 200
+  case_name: wrong_password
+- username: nobody
+  password: "123456"
+  expect_code: 200
+  case_name: no_such_user

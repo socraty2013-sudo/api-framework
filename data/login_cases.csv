@@ -1,0 +1,4 @@
+username,password,expect_code,case_name
+admin,123456,302,success
+admin,wrong,200,wrong_password
+nobody,123456,200,no_such_user

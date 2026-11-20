@@ -1,0 +1,22 @@
+api-framework/
+├── config/                  配置（base + 各环境）
+├── common/                  基础设施
+│   ├── file_handler.py      yaml/json 读写
+│   ├── api_client.py        请求封装
+│   ├── business_api.py      业务层
+│   ├── db_handler.py        数据库
+│   ├── assert_util.py       断言封装
+│   ├── logger.py            日志
+│   ├── encrypt_util.py      加密/签名
+│   └── ui_utils.py          UI 通用动作
+├── data/                    测试数据（api / ui）
+├── pages/                   POM：locators + page objects
+├── tests/                   pytest 用例
+│   ├── conftest.py
+│   ├── test_api/
+│   ├── test_db/
+│   └── test_ui/
+├── performance/             locust 压测脚本
+├── output/                  产物（logs / screenshots / allure）
+├── pytest.ini
+└── README.md

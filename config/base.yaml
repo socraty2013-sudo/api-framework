@@ -1,0 +1,11 @@
+timeout: 10
+browser: chrome
+
+user:
+  username: admin
+  password: "123456"
+
+user_enc:
+  username: admin_enc
+  password: "123456"
+

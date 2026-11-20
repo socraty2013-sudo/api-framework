@@ -1,0 +1,10 @@
+# 一条用例多个步骤时，yaml 数据文件配置
+
+# 先添加商品，再查商品，两个步骤
+- case_name: add_product & confirm
+  steps:
+    - action: add_product
+      name: yaml测试商品_001
+      price: 99.9
+      stock: 10
+    - action: get_products

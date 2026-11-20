@@ -1,0 +1,22 @@
+# 虚拟环境：每台机器自己装，体积大且和系统绑定
+.venv/
+
+# Python 运行时缓存
+__pycache__/
+*.py[cod]
+
+# pytest 缓存
+.pytest_cache/
+
+# IDE 个人配置，不共享
+.idea/
+.vscode/
+
+# Mac 系统文件
+.DS_Store
+
+# 测试产物：报告、日志、截图，跑一次生成一次
+output/
+
+# allure 原始结果
+allure-results/

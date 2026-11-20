@@ -1,0 +1,3 @@
+base_url: http://uat.example.com
+user:
+  username: uat_admin
