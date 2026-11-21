@@ -18,7 +18,7 @@ def test_login_csv(api,case):
     res = api.login(case["username"], case["password"])
     assert_status_code(res, int(case["expect_code"]))    # csv 的字段默认为字符串，这里真实请求返回的 code 为int 类型，故 csv 文件的字符串要转成 int，否则断言失败
 
-@pytest.mark.skipif(sys.version_info > (3, 10), reason="需要 Python 3.10+")    # 满足条件：python 版本< 3.10 时，则跳过
+@pytest.mark.skipif(sys.version_info < (3, 10), reason="需要 Python 3.10+")    # 满足条件：python 版本< 3.10 时，则跳过
 @pytest.mark.parametrize("case", yaml_rows, ids=[r["case_name"] for r in yaml_rows] )
 def test_login_yaml(api,case):
     res = api.login(case["username"], case["password"])
